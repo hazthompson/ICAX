@@ -101,6 +101,9 @@ padding:0;
 float: right;
 width: 15%;
 margin-top:5px;
+display: grid;
+grid-template-rows: auto auto;
+
 }
 
 #skip 
@@ -1458,8 +1461,45 @@ height:auto !important;
 
 /* search button */
 
+.outer {
+   
+    display:grid;
+    grid-template-columns: 10% 90%;
+}
 
+.magnify {
+    grid-column: 1 / span 1;
+   padding: 13px 0px 13px 0px ;
+   align-self: center;
+}
+
+.gcse-search {
+    grid-column: 2 / span 1;
+}
+.magnify::before {
+    z-index: 1;
+    content: "\f002";
+  font-weight: 600;
+    font-family: "Font Awesome 5 Pro";
+    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block; 
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+   margin-right: 0.5rem;
+}
+/* hide google default search icon-button */
 button.gsc-search-button.gsc-search-button-v2 {
+    height: 0px !important;
+    width: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+
+}
+
+.gsc-search-button {
     height: 0px !important;
     width: 0px !important;
     margin: 0px !important;
@@ -1477,6 +1517,10 @@ button.gsc-search-button.gsc-search-button-v2 {
     padding-right: 0px !important;
 }
 
+.gsc-search-box {
+    margin-bottom: 0px !important;
+}
+
 #___gcse_0 td {
     border: none;
 }
@@ -1486,13 +1530,15 @@ button.gsc-search-button.gsc-search-button-v2 {
     margin: 0% !important;
 }
 .gsc-input table {
- 
     border: 1px solid #dfe1e5;
 }
 
 .gsc-input-box {
     border: none !important;
 }
+
+
+
 
 /* @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 .gcse-search { position: relative; }
