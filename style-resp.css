@@ -1481,6 +1481,9 @@ button.gsc-search-button.gsc-search-button-v2 {
     background-color: #ffffff;
     margin: 0% !important;
 }
+.gsc-input table {
+    border: 1px solid gray;
+}
 
 @media screen and (min-width: 767px) , (min-device-width: 767px)
 {
