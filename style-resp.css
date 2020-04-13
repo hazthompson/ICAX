@@ -1472,6 +1472,10 @@ button.gsc-search-button.gsc-search-button-v2 {
     padding-right: 0px !important;
 }
 
+.gsc-input {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
 
 #___gcse_0 td {
     border: none;
@@ -1490,7 +1494,7 @@ button.gsc-search-button.gsc-search-button-v2 {
     border: none !important;
 }
 
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+/* @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 .gcse-search { position: relative; }
 .gcse-search input { text-indent: 30px;}
 .gcse-search .fa-search { 
@@ -1498,7 +1502,7 @@ button.gsc-search-button.gsc-search-button-v2 {
   top: 24px;
   left: 7px;
   font-size: 15px;
-}
+} */
 
 @media screen and (min-width: 767px) , (min-device-width: 767px)
 {
