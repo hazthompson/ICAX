@@ -584,7 +584,7 @@ padding:0 0.5%;
 
 #column-right h1 
 {
-font: font: 1.2em/1.1 'Open Sans', Arial, Helvetica, sans-serif;
+font: 1.2em/1.1 'Open Sans', Arial, Helvetica, sans-serif;
 color:#006600;
 padding:8px 0 2px 0;
 }
@@ -1461,50 +1461,37 @@ height:auto !important;
 
 /* search button */
 
-.outer {
-   
-    display:grid;
-    grid-template-columns: 10% 90%;
+.search-container {
+    display: flex;
 }
 
 .magnify {
     grid-column: 1 / span 1;
-   padding: 13px 0px 13px 0px ;
+   padding: 13px 0px 13px -5px ;
    align-self: center;
 }
 
 .gcse-search {
     grid-column: 2 / span 1;
+ 
 }
 .magnify::before {
     z-index: 1;
     content: "\f002";
-  font-weight: 600;
+    font-weight: 600;
     font-family: "Font Awesome 5 Pro";
     -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block; 
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-   margin-right: 0.5rem;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block; 
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    margin-right: 0.5rem;
 }
 /* hide google default search icon-button */
 button.gsc-search-button.gsc-search-button-v2 {
-    height: 0px !important;
-    width: 0px !important;
-    margin: 0px !important;
-    padding: 0px !important;
-
-}
-
-.gsc-search-button {
-    height: 0px !important;
-    width: 0px !important;
-    margin: 0px !important;
-    padding: 0px !important;
-
+    display: none;
 }
 
 .gsc-control-cse {
@@ -1538,18 +1525,6 @@ button.gsc-search-button.gsc-search-button-v2 {
 }
 
 
-
-
-/* @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-.gcse-search { position: relative; }
-.gcse-search input { text-indent: 30px;}
-.gcse-search .fa-search { 
-  position: absolute;
-  top: 24px;
-  left: 7px;
-  font-size: 15px;
-} */
-
 @media screen and (min-width: 767px) , (min-device-width: 767px)
 {
 #mobile-nav {display:none;}
@@ -1561,8 +1536,13 @@ button.gsc-search-button.gsc-search-button-v2 {
 img {max-width:100%; height:auto !important;}
 body {font-size:0.9em; background-color:#ffffff; background-image:none;} 
 #container {margin:0; padding:0; width:100%; padding-bottom:10px;}
-#header {float:left; padding:0; margin:5px 0; width:100%; height:100px; background: #ffffff url('graphics/ICAX_Top50.jpg') 50% no-repeat;}
-#logo {display:none;}
+#header {float:left; padding:0; margin:5px 0; width:100%; height:auto; background: #ffffff url('graphics/ICAX_Top50.jpg') 50% no-repeat;}
+/* #logo {display:none;} */
+#logo {
+    width: 100%;
+}
+.search-container {padding: 0px 5px;}
+#___gcse_0{ width:100%;}
 #skip {display:none;}
 #main-menu {display:none;}
 #main-menu2 {display:none;}
