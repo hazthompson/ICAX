@@ -1470,9 +1470,8 @@ button.gsc-search-button.gsc-search-button-v2 {
 .gsc-control-cse {
     padding-left: 0px !important;
     padding-right: 0px !important;
-   
-  
 }
+
 
 #___gcse_0 td {
     border: transparent;
@@ -1481,7 +1480,6 @@ button.gsc-search-button.gsc-search-button-v2 {
 #___gcse_0 table {
     background-color: #ffffff;
     margin: 0% !important;
-    /* border: transparent; */
 }
 
 @media screen and (min-width: 767px) , (min-device-width: 767px)
